@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div id="maindiv">
+
+      <input id="displaydiv" readonly>
+
+      <div id="buttonsdiv">
+            
+            <div class="sets" id="set1">
+               <div class="divs" ><button class="buttons"  onclick="clearDisplay()">AC</button></div>
+               <div class="divs" ><button class="buttons" onclick="percent()">%</button></div>
+               <div class="divs" ><button class="buttons" onclick="displayValue('/')">/</button></div>
+               <div class="divs" ><button class="buttons" onclick="displayValue('*')">X</button></div>
+            </div>
+   
+            <div class="sets"  id="set2">
+               <div class="divs" ><button class="buttons" onclick="displayValue('7')">7</button></div>
+               <div class="divs" ><button class="buttons" onclick="displayValue('8')">8</button></div>
+               <div class="divs" ><button class="buttons" onclick="displayValue('9')">9</button></div>
+               <div class="divs" ><button class="buttons" onclick="displayValue('-')">-</button></div>
+            </div>
+   
+            <div class="sets"  id="set3">
+               <div class="divs" ><button class="buttons" onclick="displayValue('4')">4</button></div>
+               <div class="divs" ><button class="buttons" onclick="displayValue('5')">5</button></div>
+               <div class="divs" ><button class="buttons" onclick="displayValue('6')">6</button></div>
+               <div class="divs" ><button class="buttons" onclick="displayValue('+')">+</button></div>
+            </div>
+   
+            <div class="sets"  id="set4">
+               <div class="divs" ><button class="buttons" onclick="displayValue('1')">1</button></div>
+               <div class="divs" ><button class="buttons" onclick="displayValue('2')">2</button></div>
+               <div class="divs" ><button class="buttons" onclick="displayValue('3')">3</button></div>
+               <div class="divs" ><button class="buttons" onclick="displayValue('.')">.</button></div>
+            </div>
+
+            <div  class="sets" id="set5">
+               <div class="divs" ><button class="buttons" onclick="displayValue('0')">0</button></div>
+               <div class="divs" ><button id="submitButton" onclick="displayResult()">=</button></div>
+            </div>
+      </div>
+   </div>
+
+   <script src="index.js"></script>
+</body>
+</html>
